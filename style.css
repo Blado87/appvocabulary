@@ -28,8 +28,7 @@ a{
 
 .barra-titulo-icono {
   font-size: medium;
-  color: #4A5565;
-  /* gray 600 */
+  color: #4A5565; /* gray 600 */
 }
 
 .barra-titulo-texto {
@@ -46,7 +45,7 @@ a{
   text-align: center;
   color: #D1D5DB; /* gray 300 */
   margin-top: 50px;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
   width: 90%;
 }
 
