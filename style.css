@@ -1,109 +1,201 @@
 body {
-    display: flex;
-    flex-direction: column;
-    padding: 0;
-    margin: 0;
-    width: 100%;
-    font-family: Verdana, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.main{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
+a{
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
 }
 
-.encabezado {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 80px;
-    width: 100%;
-    color: white;
-    background-color: oklch(51.1% 0.262 276.966);
+/* BARRA DE TITULO */
+.barra-titulo {
+  padding-bottom: 20px;
+  padding-top: 20px;
+  padding-left: 50px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  border-bottom: 2px solid #D1D5DB; /* gray 300 */
+  width: 100%;
 }
 
-.divisor-contenedor {
-    display: flex;
-    align-items: center;
-    text-align: center;
-    margin: 20px 0;
-    width: 80%; /* O el ancho que desees */
+.barra-titulo-icono {
+  font-size: medium;
+  color: #4A5565;
+  /* gray 600 */
+}
+
+.barra-titulo-texto {
+  font-size: larger;
+  font-weight: bold;
+  color: #4A5565;
+  /* gray 600 */
+}
+
+/* SEPARADOR */
+.separador-contenedor {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #D1D5DB; /* gray 300 */
+  margin-top: 50px;
+  margin-bottom: 20px;
+  width: 90%;
 }
 
 .linea {
-    flex-grow: 1;
-    height: 2px;
-    background-color: oklch(70.4% 0.04 256.788);
+  flex: 1;
+  height: 1px;
+  background-color: #D1D5DB;  /* gray 300 */
 }
 
 .texto {
-    padding: 0 15px;
-    color: oklch(70.4% 0.04 256.788); 
-    font-family: sans-serif;
-    font-size: 14px;
-    font-weight: bold;
+  padding: 0 15px;
+  font-size: 1.1rem;
+  font-weight: 500;
 }
 
-.mission-card {
-    background-color: #ffffff;
-    border-radius: 15px;
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 80%;
-    margin-bottom: 20px;
-    border: 2px solid oklch(70.4% 0.04 256.788);
+/* CARD */
+.card {
+  width: 80%;
+  border-radius: 12px;
+  border: 2px solid #D1D5DB; /* gray 300 */
+  border-bottom: 7px solid #D1D5DB;
+  padding: 20px;
+   margin-bottom: 40px;
 }
 
-.mission-info {
-    flex-grow: 1;
-    margin-right: 20px;
+.card-titulo{
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  font-weight: bold;
+  color: #364153; /* gray 700*/
 }
 
-.mission-title {
-    font-size: 18px;
-    font-weight: bold;
-    color: #333333;
-    margin: 0 0 10px 0;
+/* --- MEJORAS EN EL CUERPO (PALABRAS) --- */
+.card-cuerpo {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 12px; /* Más espacio entre palabras */
+  margin: 25px 0;
+  border: 2px dashed #D1D5DB; /* Un borde punteado da sensación de contenedor de elementos */
+  color: #364153;
+  border-radius: 16px;
+  padding: 25px;
+  background-color: #f9fafb; /* Fondo sutil para resaltar el área */
 }
 
-.mission-progress-text {
-    font-size: 14px;
-    color: #555555;
-    margin: 0;
+.card-palabra {
+  padding: 6px 12px;
+  background: white;
+  border: 1px solid #E5E7EB;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  transition: transform 0.2s;
+  cursor: default;
 }
 
-.hint-button {
-    /* Color de fondo plano */
-    background-color: #9956DE; 
-    color: #ffffff;
-    border: none;
-    padding: 12px 24px;
-    border-radius: 15px; /* Bordes bien redondeados como la imagen */
-    font-size: 16px;
-    font-weight: bold;
-    cursor: pointer;
-    
-    /* El truco del efecto 3D: sombra sólida sin desenfoque (blur 0) */
-    /* El color de la sombra debe ser un poco más oscuro que el fondo */
-    box-shadow: 0px 5px 0px #7b42b5; 
-    
-    transition: all 0.1s ease;
-    position: relative;
-    outline: none;
+.card-palabra:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
 }
 
-/* Efecto visual al hacer clic */
-.hint-button:active {
-    transform: translateY(3px);      /* El botón baja para simular presión */
+/* --- MEJORAS EN LOS BOTONES --- */
+.card-pie {
+  display: flex;
+  align-items: center; /* Alineación vertical */
+  justify-content: space-between; /* Uno a cada lado */
+  padding-top: 10px;
 }
 
-.hint-button2 {
-    background-color: oklch(76.8% 0.233 130.85); 
-    box-shadow: 0px 2px 0px oklch(53.2% 0.157 131.589); /* La sombra se achica */
+.btn-secundario {
+  background: none;
+  border: none;
+  font-weight: bold;
+  color: #185DFB;
+  cursor: pointer;
+  font-size: 1rem;
+  padding: 10px;
+  transition: opacity 0.2s;
+}
+
+.btn-secundario:hover {
+  text-decoration: underline;
+  opacity: 0.8;
+}
+
+/* --- ESTILO BASE (Estructura y Animación) --- */
+.boton {
+  border: none;
+  padding: 14px 32px;
+  border-radius: 14px; 
+  font-size: 15px;
+  font-weight: 800; 
+  cursor: pointer;
+  transition: all 0.1s; 
+  text-transform: uppercase;
+  color: #ffffff; /* El texto casi siempre será blanco */
+  display: inline-block;
+  text-align: center;
+}
+
+/* Efecto de hundimiento al presionar para todos los botones */
+.boton:active {
+  box-shadow: 0px 0px 0px transparent !important; 
+  transform: translateY(5px);
+}
+
+/* --- VARIANTES DE COLORES TAILWIND --- */
+
+/* 1. Azul (Blue 600) */
+.btn-azul {
+  background-color: #2563eb;
+  box-shadow: 0px 5px 0px #1e40af; /* Blue 800 */
+}
+
+/* 2. Verde (Emerald 600) */
+.btn-verde {
+  background-color: #059669;
+  box-shadow: 0px 5px 0px #065f46; /* Emerald 800 */
+}
+
+/* 3. Rojo (Red 600) */
+.btn-rojo {
+  background-color: #dc2626;
+  box-shadow: 0px 5px 0px #991b1b; /* Red 800 */
+}
+
+/* 4. Morado (Violet 600) */
+.btn-morado {
+  background-color: #7c3aed;
+  box-shadow: 0px 5px 0px #5b21b6; /* Violet 800 */
+}
+
+/* 5. Naranja (Orange 600) */
+.btn-naranja {
+  background-color: #ea580c;
+  box-shadow: 0px 5px 0px #9a3412; /* Orange 800 */
+}
+
+/* 6. Rosa (Pink 600) */
+.btn-rosa {
+  background-color: #db2777;
+  box-shadow: 0px 5px 0px #9d174d; /* Pink 800 */
+}
+
+/* 7. Gris (Slate 600) */
+.btn-gris {
+  background-color: #475569;
+  box-shadow: 0px 5px 0px #1e293b; /* Slate 800 */
 }
