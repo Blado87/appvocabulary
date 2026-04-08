@@ -198,3 +198,31 @@ a{
   background-color: #475569;
   box-shadow: 0px 5px 0px #1e293b; /* Slate 800 */
 }
+
+
+/* lista de palabras */
+/* Estilos para la lista de palabras */
+.card-palabra-lista {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  border-bottom: 1px solid #D1D5DB;
+  width: 90%;
+  background: white;
+}
+
+.txt-ingles {
+  font-weight: bold;
+  color: #1e40af;
+}
+
+.txt-traduccion {
+  color: #4b5563;
+}
+
+/* Ajuste para el input de práctica */
+input:focus {
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.2);
+}
