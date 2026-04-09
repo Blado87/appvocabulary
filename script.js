@@ -20,8 +20,26 @@ const vocabularios = [
           { ingles: "Water", traducciones: ["Agua"] },
           { ingles: "Hello", traducciones: ["Hola"] }
         ]
+      },
+      {
+        seccion: 2,
+        colorClase: "btn-azul",
+        palabras: [
+          { ingles: "Japan", traducciones: ["Japón"] },
+          { ingles: "Mexico", traducciones: ["México"] },
+          { ingles: "From", traducciones: ["De"] },
+          { ingles: "China", traducciones: ["China"] },
+          { ingles: "I am", traducciones: ["Yo soy", "Yo estoy"] },
+          { ingles: "France", traducciones: ["Francia"] },
+          { ingles: "Brazil", traducciones: ["Brasil"] },
+          { ingles: "Too", traducciones: ["También", "Demasiado"] },
+          { ingles: "Paris", traducciones: ["París"] },
+          { ingles: "Tokyo", traducciones: ["Tokio"] },
+          { ingles: "London", traducciones: ["Londres"] },
+        ]
       }
-    ]
+    ],
+   
   }
 ];
 
