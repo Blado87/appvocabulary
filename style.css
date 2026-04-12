@@ -1,98 +1,117 @@
+/* font google */
+.chewy-regular {
+  font-family: "Chewy", system-ui;
+  font-weight: 500;
+  font-style: normal;
+}
+
+
 body {
+  background-image: url('background_app.jpeg');
+  box-sizing: border-box;
+}
+
+.bar-info-container {
+  display: flex;
+  justify-content: end;
+}
+
+.bar-info {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 10px;
+  border-radius: 50px;
+  width: 130px;
+  background-color: black;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  
+}
+
+.bar-info img {
+  width: 20px;
+}
+
+.bar-info p {
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+.marca-nivel {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.marca-nivel img {
+  width: 82px;
+}
+
+.main-container {
+margin-bottom: 100PX;
+}
+
+
+.card {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%;
-  padding: 0;
-  margin: 0;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
+  border-radius: 10px;
+  margin-top: 30px;
+  background-color: #FFF3D1;
+  border: 2px solid #BF7839;
+  border-bottom: 6px solid #BF7839;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}       
 
-a{
-  text-decoration: none;
-  color: inherit;
-  cursor: pointer;
-}
-
-/* BARRA DE TITULO */
-.barra-titulo {
-  padding-bottom: 20px;
-  padding-top: 20px;
-  padding-left: 50px;
+.card-header {
   display: flex;
   flex-direction: row;
-  gap: 10px;
-  border-bottom: 2px solid #D1D5DB; /* gray 300 */
-  width: 100%;
-}
-
-.barra-titulo-icono {
-  font-size: medium;
-  color: #4A5565; /* gray 600 */
-}
-
-.barra-titulo-texto {
-  font-size: larger;
-  font-weight: bold;
-  color: #4A5565;
-  /* gray 600 */
-}
-
-/* SEPARADOR */
-.separador-contenedor {
-  display: flex;
   align-items: center;
-  text-align: center;
-  color: #D1D5DB; /* gray 300 */
-  margin-top: 50px;
-  margin-bottom: 50px;
-  width: 90%;
+  gap: 10px;
+  padding-left: 15px; 
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;  
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #FEDF82;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 10px;
 }
 
-.linea {
-  flex: 1;
-  height: 1px;
-  background-color: #D1D5DB;  /* gray 300 */
+.card-header img{
+  width: 30px;
+  height: 30px;
 }
 
-.texto {
-  padding: 0 15px;
-  font-size: 1.1rem;
-  font-weight: 500;
+.card-header p{
+ font-size: 25px;
+ color: #914711;
+ margin: 0;
+ padding: 0;
 }
 
-/* CARD */
-.card {
-  width: 80%;
-  border-radius: 12px;
-  border: 2px solid #D1D5DB; /* gray 300 */
-  border-bottom: 10px solid #D1D5DB;
-  padding: 20px;
-  margin-bottom: 40px;
-}
-
-.card-titulo{
-  display: flex;
-  flex-direction: row;
-  gap: 5px;
-  font-weight: bold;
-  color: #364153; /* gray 700*/
-}
-
-.card-cuerpo {
-  display: flex;
+.card-body {
+    display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  gap: 12px; /* Más espacio entre palabras */
+  background-color: #FFFCF7;
+  width: 95%;
+  border-radius: 8px;
+  border: 2px solid #BF7839;
+  border-style: dashed;
+  gap: 12px;
   margin: 25px 0;
-  border: 2px dashed #D1D5DB; /* Un borde punteado da sensación de contenedor de elementos */
-  color: #364153;
-  border-radius: 16px;
   padding: 25px;
-  background-color: #f9fafb; /* Fondo sutil para resaltar el área */
+    width: 90%;
+  box-sizing: border-box;
 }
+
 
 .card-palabra {
   padding: 6px 12px;
@@ -100,128 +119,49 @@ a{
   border: 1px solid #E5E7EB;
   border-radius: 8px;
   font-size: 0.95rem;
-  transition: transform 0.2s;
-  cursor: default;
 }
 
-.card-palabra:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-}
-
-/* --- MEJORAS EN LOS BOTONES --- */
-.card-pie {
+.card-footer {
   display: flex;
-  align-items: center; /* Alineación vertical */
-  justify-content: space-between; /* Uno a cada lado */
-  padding-top: 10px;
-}
-
-.btn-secundario {
-  background: none;
-  border: none;
-  font-weight: bold;
-  color: #185DFB;
-  cursor: pointer;
-  font-size: 1rem;
-  padding: 10px;
-  transition: opacity 0.2s;
-}
-
-.btn-secundario:hover {
-  text-decoration: underline;
-  opacity: 0.8;
-}
-
-/* --- ESTILO BASE (Estructura y Animación) --- */
-.boton {
-  border: none;
-  padding: 14px 32px;
-  border-radius: 14px; 
-  font-size: 15px;
-  font-weight: 800; 
-  cursor: pointer;
-  transition: all 0.1s; 
-  text-transform: uppercase;
-  color: #ffffff; /* El texto casi siempre será blanco */
-  display: inline-block;
-  text-align: center;
-}
-
-/* Efecto de hundimiento al presionar para todos los botones */
-.boton:active {
-  box-shadow: 0px 0px 0px transparent !important; 
-  transform: translateY(5px);
-}
-
-/* --- VARIANTES DE COLORES TAILWIND --- */
-
-/* 1. Azul (Blue 600) */
-.btn-azul {
-  background-color: #2563eb;
-  box-shadow: 0px 5px 0px #1e40af; /* Blue 800 */
-}
-
-/* 2. Verde (Emerald 600) */
-.btn-verde {
-  background-color: #059669;
-  box-shadow: 0px 5px 0px #065f46; /* Emerald 800 */
-}
-
-/* 3. Rojo (Red 600) */
-.btn-rojo {
-  background-color: #dc2626;
-  box-shadow: 0px 5px 0px #991b1b; /* Red 800 */
-}
-
-/* 4. Morado (Violet 600) */
-.btn-morado {
-  background-color: #7c3aed;
-  box-shadow: 0px 5px 0px #5b21b6; /* Violet 800 */
-}
-
-/* 5. Naranja (Orange 600) */
-.btn-naranja {
-  background-color: #ea580c;
-  box-shadow: 0px 5px 0px #9a3412; /* Orange 800 */
-}
-
-/* 6. Rosa (Pink 600) */
-.btn-rosa {
-  background-color: #db2777;
-  box-shadow: 0px 5px 0px #9d174d; /* Pink 800 */
-}
-
-/* 7. Gris (Slate 600) */
-.btn-gris {
-  background-color: #475569;
-  box-shadow: 0px 5px 0px #1e293b; /* Slate 800 */
-}
-
-
-/* lista de palabras */
-/* Estilos para la lista de palabras */
-.card-palabra-lista {
-  display: flex;
+  flex-direction: row;
   justify-content: space-between;
-  padding: 15px;
-  border-bottom: 1px solid #D1D5DB;
   width: 90%;
-  background: white;
+  box-sizing: border-box;
+
 }
 
-.txt-ingles {
-  font-weight: bold;
-  color: #1e40af;
+.primary-button-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: white;
+  background-color: #BF7839;
+  border-bottom: 6px solid #7c481a;
+  width: 150px;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
-.txt-traduccion {
-  color: #4b5563;
+.secondary-button-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: #BF7839;
+  background-color: #FFF3D1;
+  border-bottom: 6px solid #FFF3D1;
+  width: 150px;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
-/* Ajuste para el input de práctica */
-input:focus {
-  outline: none;
-  border-color: #2563eb;
-  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.2);
+
+/* lista */
+.container-boton-inicio img{
+  width: 42px;
 }
