@@ -1,14 +1,7 @@
-/* font google */
-.chewy-regular {
-  font-family: "Chewy", system-ui;
-  font-weight: 500;
-  font-style: normal;
-}
-
-
 body {
   background-image: url('background_app.jpeg');
   box-sizing: border-box;
+  font-family:  Verdana, sans-serif;
 }
 
 .bar-info-container {
@@ -164,4 +157,26 @@ margin-bottom: 100PX;
 /* lista */
 .container-boton-inicio img{
   width: 42px;
+}
+
+.list-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.list-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: #f7f7f7;
+  width: 90%;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  border-radius: 10px;
+  color:#2e2e2e;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
