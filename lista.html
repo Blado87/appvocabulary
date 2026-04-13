@@ -1,110 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="style.css">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Palabras</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+<body style="background-image: url('background_app.jpeg');">
 
-<body style="background-image: url('fondo.png');">
-  <!-- Barra superior -->
-  <div class="">
-    <div class="container-boton-inicio">
-      <a href="index.html"><img src="boton-inicio.png" alt="boton inicio"></a>
-    </div>
-  </div>
+    <header class="top-bar">
+        <a href="index.html" class="btn-back-home">
+            <img src="boton-inicio.png" alt="Volver al inicio" width="40">
+        </a>
+        <h2 id="titulo-seccion" style="color: white; font-size: 1.2rem;">Lista de Estudio</h2>
+    </header>
 
-  <!-- lista de palabras -->
-  <div class="list-container">
-    <di class="list-item">
-      <span>welcome</span>
-      <span>/</span>
-      <span>bienvenido, de nada</span>
-    </di>
-    <di class="list-item">
-      <span>tea</span>
-      <span>/</span>
-      <span>té</span>
-    </di>
+    <main class="main-wrapper">
+        <div class="list-container" id="contenedor-palabras">
+            </div>
+    </main>
 
-    <di class="list-item">
-      <span>coffee</span>
-      <span>/</span>
-      <span>cafe</span>
-    </di>
-
-    <di class="list-item ">
-      <span>and</span>
-      <span>/</span>
-      <span>y</span>
-    </di>
-
-    <di class="list-item ">
-      <span>milk</span>
-      <span>/</span>
-      <span>leche</span>
-    </di>
-  
-    <di class="list-item ">
-      <span>sugar</span>
-      <span>/</span>
-      <span>azucar</span>
-    </di>
-  
-    <di class="list-item">
-      <span>or</span>
-      <span>/</span>
-      <span>o</span>
-    </di>
- 
-    <di class="list-item ">
-      <span>with</span>
-      <span>/</span>
-      <span>con</span>
-    </di>
-  
-    <di class="list-item ">
-      <span>please</span>
-      <span>/</span>
-      <span>por favor</span>
-    </di>
-
-    <di class="list-item">
-      <span>Thank you</span>
-      <span>/</span>
-      <span>gracias</span>
-    </di>
-
-    <di class="list-item">
-      <span>goodbye</span>
-      <span>/</span>
-      <span>adios</span>
-    </di>
-
-    <di class="list-item">
-      <span>water</span>
-      <span>/</span>
-      <span>agua</span>
-    </di>
-
-    <di class="list-item">
-      <span>hello</span>
-      <span>/</span>
-      <span>hola</span>
-    </di>
-
-  </div>
-
-
-
-  </div>
-  <!-- Contenedor de tarjetas -->
-
-
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
-
 </html>
